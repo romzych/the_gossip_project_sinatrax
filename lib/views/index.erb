@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body style="background-image: url(https://www.francetvinfo.fr/image/75nmi9cly-dc1d/580/326/20250133.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <h1 style="position: relative">Mon super DOUBLE TOZ de QUALITé, depuis le dossier views !</h1>
+    <img src="https://media.giphy.com/media/jVy0L8tLONOhy/giphy.gif" alt="">
+    <a href="/gossips/new/">POUR AJOUTER DES POTINS</a>
+    <% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br/>
+          
+        </p>
+      <% end %>
+  </body>
+</html>

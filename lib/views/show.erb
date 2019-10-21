@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body style="background-image: url(https://www.francetvinfo.fr/image/75nmi9cly-dc1d/580/326/20250133.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <h1>PAGE POTIN</h1>
+      <p>Voici la page du potin n°<%= params['id'] %></p>
+     <p>Son auteur : <%= Gossip.find(params['id'].to_i).author%></p>
+     <p>Son auteur : <%= Gossip.find(params['id'].to_i).content%></p>
+     <a href="/">revenir a la page d'accueil</a>
+  </body>
+</html> 
